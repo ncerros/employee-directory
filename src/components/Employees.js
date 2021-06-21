@@ -1,4 +1,4 @@
-import React form "react";
+import React from "react";
 
 const Employees = (props) => {
     function formatDate(date) {
@@ -8,6 +8,7 @@ const Employees = (props) => {
         const dayArray = dateArray[2].split("T");
         const day = dayArray[0];
         const formattedDate = [month, day, year].join("-");
+        return formattedDate;
     }
 
 let dateOfBirth = formatDate(props.dob);
