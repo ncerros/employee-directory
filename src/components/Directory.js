@@ -66,3 +66,53 @@ class Directory extends Component {
             </thead>
             <tbody>
               {
+                
+                !this.state.sorted
+                  ? this.state.employees.map((employee) => (
+                      <Employees
+                        key={employee.id.value}
+                        firstName={employee.name.first}
+                        lastName={employee.name.last}
+                        phone={employee.phone}
+                        email={employee.email}
+                        icon={employee.picture.medium}
+                        dob={employee.dob.date}
+                        address={
+                          employee.location.street.number +
+                          " " +
+                          employee.location.street.name +
+                          ", " +
+                          employee.location.city +
+                          ", " +
+                          employee.location.state +
+                          " " +
+                          employee.location.postcode
+                        }
+                      />
+                    ))
+                  : // once the user starts to search, empSort will sort users using UUID 
+                    this.state.empSort.map((employee) => (
+                      <Employees
+                        key={employee.id.value}
+                        firstName={employee.name.first}
+                        lastName={employee.name.last}
+                        phone={employee.phone}
+                        email={employee.email}
+                        icon={employee.picture.medium}
+                        dob={employee.dob.date}
+                        address={
+                          employee.location.street.number +
+                          employee.location.street.name
+                        }
+                      />
+                    ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  };
+}
+
+export default Directory;    
