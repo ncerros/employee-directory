@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Employees from "./Employees.js";
 import Search from "./Search.js";
-import Api from "../utils/Api";
+import API from "../utils/API";
 import "../styles/Directory.css";
 
 class Directory extends Component {
@@ -14,7 +14,7 @@ class Directory extends Component {
 
   // Will execute the code when the components are in the DOM
   componentDidMount = () => {
-    Api.getUsers().then((results) => {
+    API.getUsers().then((results) => {
       this.setState({
         employees: results.data.results,
       });
