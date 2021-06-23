@@ -23,7 +23,6 @@ return (
       <td>{props.email}</td>
       <td>{props.phone} </td>
       <td>{dateOfBirth}</td>
-      <td>{props.address}</td>
     </tr>
   );
 };

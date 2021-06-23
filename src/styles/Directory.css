@@ -1,4 +1,22 @@
 
 .background {
-    background-color: #6cd2f1;
+    background-color: #85cde2;
   }
+
+   .thead tr:nth-child(1) th{
+      
+      position: sticky;
+      border: 10px;
+      top: 0;
+      z-index: 10;
+    }
+
+    img {
+        border-radius: 20%;  
+        box-shadow: rgb(238, 233, 233) 1px 1px 8px;  
+     }
+    .thead, tr, td {
+        color: rgb(211, 206, 206);
+    }
+        
+    

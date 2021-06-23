@@ -60,13 +60,13 @@ class Directory extends Component {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Date of Birth</th>
-                <th>Address</th>
+                <th>DOB</th>
               </tr>
             </thead>
             <tbody>
+             
+
               {
-                
                 !this.state.sorted
                   ? this.state.employees.map((employee) => (
                       <Employees
@@ -77,17 +77,7 @@ class Directory extends Component {
                         email={employee.email}
                         icon={employee.picture.medium}
                         dob={employee.dob.date}
-                        address={
-                          employee.location.street.number +
-                          " " +
-                          employee.location.street.name +
-                          ", " +
-                          employee.location.city +
-                          ", " +
-                          employee.location.state +
-                          " " +
-                          employee.location.postcode
-                        }
+                        
                       />
                     ))
                   : // once the user starts to search, empSort will sort users using UUID 
@@ -99,11 +89,7 @@ class Directory extends Component {
                         phone={employee.phone}
                         email={employee.email}
                         icon={employee.picture.medium}
-                        dob={employee.dob.date}
-                        address={
-                          employee.location.street.number +
-                          employee.location.street.name
-                        }
+                        dob={employee.dob.date}                   
                       />
                     ))
               }
