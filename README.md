@@ -4,7 +4,7 @@ This amazing React app its very helpful to search an employee directory by name,
 
 # Deployment and Images
 
-[Deployed app URL here](https://evening-oasis-60943.herokuapp.com/)
+[Deployed app URL here](https://ncerros.github.io/employee-directory/)
 
 ![Employee Directory](image/EmployeesDirectory.png)
 
