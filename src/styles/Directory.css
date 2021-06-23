@@ -2,6 +2,7 @@
 .background {
     background-color: #85cde2;
   }
+ 
 
    .thead tr:nth-child(1) th{
       
@@ -17,6 +18,13 @@
      }
     .thead, tr, td {
         color: rgb(211, 206, 206);
-    }
         
+    }
+    .tr {
+        padding-top: 40px;
+    }
+    .tbody {
+        padding-top: 15px;
+    }
+    
 

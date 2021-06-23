@@ -53,7 +53,7 @@ class Directory extends Component {
         </div>
 
         <div className="container-fluid">
-          <table className="table table-dark table-striped table-hover  table-condensed">
+          <table className="table table-dark table-striped table-hover  table-condensed text-center">
             <thead className="thead">
               <tr>
                 <th>Image</th>
@@ -65,7 +65,6 @@ class Directory extends Component {
             </thead>
             <tbody>
              
-
               {
                 !this.state.sorted
                   ? this.state.employees.map((employee) => (
