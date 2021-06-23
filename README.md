@@ -1,5 +1,5 @@
 # Employees Directory
-This amazing React app its a very helpful to search an employee directory by name, email, phone, and DOB. Typing any text on the search box will provide any match available.
+This amazing React app its very helpful to search an employee directory by name, email, phone, or DOB. Typing any text on the search box will provide any match available.
 
 
 # Deployment and Images
